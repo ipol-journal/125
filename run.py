@@ -43,7 +43,7 @@ def nc_get_min_max(filename):
     # Guess number number of channels
     numBins = len(lines)
     if numBins > 0:
-        numChannels = len(lines[0])/2
+        numChannels = int(len(lines[0])/2)
     else:
         numChannels = 0
 
