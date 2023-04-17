@@ -96,5 +96,5 @@ for i in range(args.nbscales):
     for C in ["L", "H"]:
         estimation = f'denoised_noiseCurves_{C}_{i}.txt'
         figure = f'denoised_noiseCurves_{C}_{i}.png'
-        subprocess.run(["writeNoiseCurve.sh", estimation, str(args.num_channels), str(x_min*0.9), str(x_max*1.1), \
+        subprocess.run(["writeNoiseCurve.sh", str(estimation), str(num_channels), str(x_min*0.9), str(x_max*1.1), \
             str(y_min*0.9), str(y_max*1.1), figure])
